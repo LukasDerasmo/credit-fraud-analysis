@@ -29,15 +29,15 @@ Preliminary Information Queries
 Before moving to Power BI, it is important to complete some initial queries to understand themes from the data that could be used in the visualization.
 
 *“What is the total amount lost to fraud?”*  
-![Total fraud loss](image/image5.png)
+![Total fraud loss](image/image2.png)
 
 *“Does fraud occur at particular times?”*  
-![Fraud by time](image/image4.png)
+![Fraud by time](image/image3.png)
 
 Preliminary Information Queries, Contd.
 
 *"Are fraudsters stealing small amounts to stay under the radar, or going for big hits?"*
-![Transaction amount, fraud/legitimate](image/image3.png)
+![Transaction amount, fraud/legitimate](image/image5.png)
 
 | transaction\_type | transaction\_count | avg\_dollar\_total | max\_dollar\_total |
 | :---- | :---- | :---- | :---- |
@@ -47,7 +47,7 @@ Preliminary Information Queries, Contd.
 Preliminary Information Queries, Contd.
 
 **Importance Analysis:** *“Which features are most strongly correlated with fraud?”*
-![Correlation](image/image2.png)
+![Correlation](image/image4.png)
 
 
 | feature | corr\_with\_class |

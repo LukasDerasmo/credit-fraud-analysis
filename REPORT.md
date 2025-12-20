@@ -4,26 +4,6 @@
 (Anonymized credit card transactions labeled as fraudulent or genuine)  
 Source: Kaggle ([https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data))
 
-**Intelligence Brief**  
-Develop a counter-fraud intelligence workflow to detect illicit financial patterns within a dataset of 284,807 European credit card transactions. Utilizing PCA-transformed features to maintain GDPR/PII compliance, the system identified $60,127 in fraudulent exposure across 492 confirmed cases. The investigation revealed distinct temporal attack vectors (late-night velocity spikes) and transaction structuring behaviors (averaging $122.21 per fraud instance vs. $88.29 for legitimate use), enabling targeted risk mitigation strategies.
-
-**Data Source & Anonymization Protocols**  
-The dataset comprises 284,807 individual transactions in 2013 from European cardholders. To comply with privacy standards, the source data was subjected to anonymization before being published:
-
-* 28 highly sensitive user features (e.g., identity, location, device telemetry) were mathematically transformed using Principal Component Analysis (PCA) into numerical vectors (V1 – V28). This preserves the statistical variance and correlation structures needed for pattern recognition while stripping away identifiers.  
-* Absolute timestamps were removed and replaced with a "Time" delta (seconds elapsed since the initial dataset entry), allowing for time-based pattern analysis without revealing specific dates or individual user schedules.  
-* Only two operational metrics, being Amount and Class (eg.- Fraudulent/Legitimate), were retained in their original format. Class takes the value of 1 in a case of fraud, 0 otherwise.
-
-**Operational Objectives**
-
-* Architect a PostgreSQL data warehouse to manage raw transaction logs.  
-* Apply statistical logic to masked PCA features to uncover hidden fraud vectors.  
-* Deploy a Power BI operational dashboard to monitor financial exposure and fraud velocity.
-
-**Note**
-
-* The dataset is highly unbalanced, the positive class (frauds) account for less than 1 percent of all transactions.
-
 Preliminary Information Queries
 
 Before moving to Power BI, it is important to complete some initial queries to understand themes from the data that could be used in the visualization.
@@ -34,12 +14,8 @@ Before moving to Power BI, it is important to complete some initial queries to u
 *“Does fraud occur at particular times?”*  
 ![Fraud by time](image/image3.png)
 
-Preliminary Information Queries, Contd.
-
 *"Are fraudsters stealing small amounts to stay under the radar, or going for big hits?"*
 ![Transaction amount, fraud/legitimate](image/image5.png)
-
-Preliminary Information Queries, Contd.
 
 **Importance Analysis:** *“Which features are most strongly correlated with fraud?”*
 ![Correlation](image/image4.png)
@@ -76,7 +52,7 @@ Preliminary Information Queries, Contd.
 | v23 | \-0.002685155740250701 |
 | v22 | 0.0008053175052983957 |
 
-	
+Dashboard
 
 ![Power BI](image/image1.png)
 

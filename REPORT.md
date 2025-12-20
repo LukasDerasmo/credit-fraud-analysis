@@ -6,8 +6,6 @@ Source: Kaggle ([https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data](h
 
 Preliminary Information Queries
 
-Before moving to Power BI, it is important to complete some initial queries to understand themes from the data that could be used in the visualization.
-
 *“What is the total amount lost to fraud?”*  
 ![Total fraud loss](image/image2.png)
 

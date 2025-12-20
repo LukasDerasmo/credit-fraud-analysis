@@ -39,11 +39,6 @@ Preliminary Information Queries, Contd.
 *"Are fraudsters stealing small amounts to stay under the radar, or going for big hits?"*
 ![Transaction amount, fraud/legitimate](image/image5.png)
 
-| transaction\_type | transaction\_count | avg\_dollar\_total | max\_dollar\_total |
-| :---- | :---- | :---- | :---- |
-| Legitimate | 284315 | 88.29 | 25691.16 |
-| Fraudulent | 492 | 122.21 | 2125.87 |
-
 Preliminary Information Queries, Contd.
 
 **Importance Analysis:** *“Which features are most strongly correlated with fraud?”*

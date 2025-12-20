@@ -29,16 +29,16 @@ Preliminary Information Queries
 Before moving to Power BI, it is important to complete some initial queries to understand themes from the data that could be used in the visualization.
 
 *“What is the total amount lost to fraud?”*  
-![][image1]
+![][image1.png]
 
 *“Does fraud occur at particular times?”*  
-![][image2]
+![][image2.png]
 
 Preliminary Information Queries, Contd.
 
 *"Are fraudsters stealing small amounts to stay under the radar, or going for big hits?"*
 
-*![][image3]*
+![][image3.png]
 
 | transaction\_type | transaction\_count | avg\_dollar\_total | max\_dollar\_total |
 | :---- | :---- | :---- | :---- |
@@ -49,7 +49,7 @@ Preliminary Information Queries, Contd.
 
 **Importance Analysis:** *“Which features are most strongly correlated with fraud?”*
 
-![][image4]
+![][image4.png]
 
 | feature | corr\_with\_class |
 | :---- | :---- |
@@ -84,7 +84,7 @@ Preliminary Information Queries, Contd.
 
 	
 
-![][image5]  
+![][image5.png]  
 **Figure 1:**   
 Vector Space Analysis (PCA). Scatter plot reveals a distinct clustering of fraudulent transactions (Orange) versus legitimate baselines (Blue) along components V17 and V14, confirming these features as high-value indicators for anomaly detection algorithms.  
 **Figure 2:**   

@@ -52,7 +52,7 @@ Before moving to Power BI, it is important to complete some initial queries to u
 | v23 | \-0.002685155740250701 |
 | v22 | 0.0008053175052983957 |
 
-Dashboard
+**Dashboard**
 
 ![Power BI](image/image1.png)
 

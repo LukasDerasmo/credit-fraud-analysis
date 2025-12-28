@@ -65,8 +65,8 @@ Financial Exposure Over Time (Velocity Analysis). Temporal analysis over a 48-ho
 **Technologies Leveraged:** 
 
 * PostgreSQL (Data Warehousing)  
-* SQL (Aggregations, CTEs)  
-* Power BI (DAX, Dashboarding)  
+* SQL (Aggregations)  
+* Power BI (Dashboarding)  
 * Anonymization Protocols (PCA, GDPR Compliance).
 
 **Recommendations:**

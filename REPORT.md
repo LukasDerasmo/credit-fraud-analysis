@@ -57,9 +57,9 @@ Preliminary Information Queries
 **Figure 1:**   
 Vector Space Analysis (PCA). Scatter plot reveals a distinct clustering of fraudulent transactions (Orange) versus legitimate baselines (Blue) along components V17 and V14, confirming these features as high-value indicators for anomaly detection algorithms.  
 **Figure 2:**   
-Fraud Frequency by Transaction Size. Anomaly profiling indicates that the majority of fraudulent activity (top bar) targets Low Value transactions (\<$50), likely to evade standard bank authorization thresholds. However, a significant cluster of Medium Value ($50–$500) hits suggests a secondary strategy of testing larger limits once initial small charges succeed.  
+Fraud Frequency by Transaction Size. Anomaly profiling indicates that the majority of fraudulent activity (top bar) targets Low Value transactions (\<$50), likely to evade standard bank authorization thresholds. However, a significant cluster of Medium Value ($50–$500) hits suggests the potential of a secondary strategy of testing larger limits once initial small charges succeed. 
 **Figure 3:**   
-Financial Exposure Over Time (Velocity Analysis). Temporal analysis over a 48-hour window reveals irregular, high-velocity spikes in fraudulent financial exposure (red peaks), contrasting with typical diurnal consumer spending patterns. These distinct surges validate the need for real-time, automated intervention systems rather than manual, business-hour reviews.  
+Financial Exposure Over Time (Velocity Analysis). Temporal analysis over a 48-hour window reveals irregular, high-velocity spikes in fraudulent financial exposure (red peaks), contrasting with typical daily consumer spending patterns. These distinct surges validate the need for real-time, automated intervention systems rather than manual, business-hour reviews.  
 	
 
 **Technologies Leveraged:** 
@@ -75,5 +75,5 @@ Based on the findings, there are three key recommendations for greater security:
 
 * **First**, deploy an automated rule that flags accounts exhibiting an abnormally high frequency of low-value transactions within a short time window (e.g., 3+ transactions under $50 in 5 minutes). This directly counters a common tactic used by fraudsters to evade simple high-amount alert thresholds.   
 * **Second**, integrate the PCA vector analysis into this live transaction scoring engine. Any transaction with a signature falling within this high-risk "kill zone" (e.g., V17 \< \-5 and V14 \< \-5) should have its risk score significantly elevated, triggering an additional factor of authentication or a temporary account hold for preemptive loss prevention.   
-* **Third**, augment the current system with a dynamic baselining model that establishes a "normal" transaction velocity and volume for any given hour. The system should automatically flag any sudden deviation exceeding a set threshold (e.g., 3 standard deviations from the hourly norm), providing early warning of coordinated fraud campaigns that defy static rules.
+* **Third**, augment the current system with a model that establishes a "normal" transaction velocity and volume for any given hour. The system should automatically flag any sudden deviation exceeding a set threshold (e.g., X standard deviations from the hourly norm, to be determined after further analysis), providing early warning of coordinated fraud campaigns that defy static rules.
 
